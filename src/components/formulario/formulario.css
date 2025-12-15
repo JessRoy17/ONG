@@ -1,0 +1,143 @@
+form {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 380px;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #F65E3D;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.margenesForm {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.legendTitulo {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 20px;
+}
+
+.fieldsetForm {
+    margin-bottom: 20px;
+}
+
+.placeholderColor::placeholder {
+    color: white;
+}
+
+input,
+textarea {
+    color: white;
+    outline: none;
+    font: 1em sans-serif;
+    border-radius: 3px;
+    background-color: #F65E3D;
+    border-bottom: #000 solid 1px;
+    border-left: #000 solid 1px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+
+.buttonAyudanos {
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #FFA08B;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+
+}
+
+#edad {
+    font: 1em sans-serif;
+    width: 70px;
+    margin-left: 30px;
+    border-bottom: #000 solid 1px;
+    border-left: #000 solid 1px;
+}
+
+#apellido {
+    margin-left: 30px;
+}
+
+#tlf {
+    margin-left: 30px;
+}
+
+textarea {
+    vertical-align: top;
+    height: 8em;
+    width: 740px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .oculto--formularioPC {
+        display: none;
+
+    }
+
+    .oculto--formulario {
+        margin: auto;
+        margin-bottom: 30px;
+        justify-items: left;
+    }
+
+    .oculto--formulario input[type="text"],
+    .oculto--formulario input[type="email"],
+    .oculto--formulario textarea {
+        width: calc(100% - 40px);
+        margin-bottom: 15px;
+    }
+    #edad {
+        font: 1em sans-serif;
+        width: 70px;
+        margin-left: 0px;
+        border-bottom: #000 solid 1px;
+        border-left: #000 solid 1px;
+    }
+    
+    #apellido {
+        margin-left: 0px;
+    }
+    
+    #tlf {
+        margin-left: 0px;
+    }
+
+    .oculto--formulario-button {
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #FFA08B;
+        margin: auto;
+        width: 120px;
+        height: 40px;
+    }
+
+    .oculto--formulario-legend {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    /* Pc */
+    .oculto--formulario {
+        display: none;
+    }
+}
