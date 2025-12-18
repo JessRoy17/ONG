@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 
 import HomePage from './Pages/home/home.tsx';
-import AlimentosInfo from './components/alimentos/AlimentosInfo.jsx'; 
-import './components/alimentos/alimentosinfo.css'; 
+import AlimentosInfo from './Pages/home/Alimentos/AlimentosInfo.tsx'; 
+import './Pages/home/Alimentos/alimentosinfo.css'; 
 
 import MenuMovil from './components/header/desplegable.tsx';
 import HeaderPC from './components/header/header.tsx';
