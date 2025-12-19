@@ -80,7 +80,7 @@ export default function AlimentosInfo() {
 
         <div className="alimentos-agradecimientos">
           
-          <h3 className="agradecimiento-title">Agradecimientos a nuestros proveedores</h3>
+          <h3 className="agradecimiento-title">Agradecimientos a nuestros colaboradores</h3>
           <div className="alimentos-agradecimiento-img">
           <img
             src="/images/sponsor.png"
