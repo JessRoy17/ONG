@@ -178,17 +178,11 @@
   width: 16.6667%; 
   height: 100%; 
   
-  /* CLAVE: 'none' ignora el tamaño del contenedor y usa el tamaño real de la foto */
-  object-fit: none; 
   
-
+  object-fit: none; /* Nota para mi: 'none' ignora el tamaño del contenedor y usa el tamaño real de la foto */
   object-position: center; 
-  
-  /* Evita que las fotos se compriman entre ellas */
   flex-shrink: 0;
   display: block;
-  
-  /* Fondo blanco si la foto es más pequeña que el contenedor de 900x500 */
   background-color: #ffffff;
 }
 
@@ -204,6 +198,7 @@
 .indicator:nth-child(4) { animation: dotActive 25s steps(5, end) infinite 15s; }
 .indicator:nth-child(5) { animation: dotActive 25s steps(5, end) infinite 20s; }
 .indicator:nth-child(6) { animation: dotActive 25s steps(5, end) infinite 25s; }
+
 @keyframes dotActive {
   0%, 19.9% { color: #bbb; }
   20%, 39.9% { color: var(--primary); }

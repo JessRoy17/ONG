@@ -77,10 +77,8 @@ export default function AlimentosInfo() {
             <img src="/images/quehacemos.jpg" alt="Voluntarios clasificando alimentos" loading="lazy" />             
 
           </div>
-
-         
-        </div>
-
+              
+          </div>
         <div className="alimentos-agradecimientos">
         
           <h3 className="agradecimiento-title">Agradecimientos a nuestros colaboradores</h3>
@@ -91,8 +89,12 @@ export default function AlimentosInfo() {
             loading="lazy"
           />
           </div>
+          
+         
         </div>
-      </div>
+      
+        </div>
+      
     </section>
   );
 }
