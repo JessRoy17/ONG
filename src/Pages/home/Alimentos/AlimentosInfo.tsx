@@ -57,8 +57,6 @@ export default function AlimentosInfo() {
           </p>
         </div>
       </div>
-
-      {/* Carrusel de imágenes al final */}
       <div className="alimentos-carrusel-container">
         <h3 className="carrusel-title">Distribución y recogida de alimentos</h3>
         <div className="carrusel-auto">
@@ -81,12 +79,15 @@ export default function AlimentosInfo() {
         </div>
 
         <div className="alimentos-agradecimientos">
+          
           <h3 className="agradecimiento-title">Agradecimientos a nuestros proveedores</h3>
+          <div className="alimentos-agradecimiento-img">
           <img
             src="/images/sponsor.png"
             alt="Entrega de donaciones de alimentos de proveedores al banco de alimentos"
             loading="lazy"
           />
+          </div>
         </div>
       </div>
     </section>
