@@ -5,6 +5,7 @@
   --shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 25px 50px rgba(0, 0, 0, 0.15);
   --radius: 16px;
+  --transition: all 0.4s ease;
 }
 
 .alimentos-section {
@@ -15,13 +16,13 @@
 
 .alimentos-header {
   max-width: 1000px;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 4rem auto;
   text-align: center;
   padding: 3rem 2rem;
 }
 
 .alimentos-header h2 {
-  font-size: 3.8rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 900;
   color: var(--text);
   margin-bottom: 2rem;
@@ -53,8 +54,9 @@
 /* Bloques con texto + imagen */
 .alimentos-block {
   max-width: 1300px;
-  margin: 8rem auto;
+  margin: 6rem auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
   position: relative;
@@ -147,21 +149,25 @@
   margin-bottom: 4rem;
 }
 
+
 /* Contenedor principal */
 .carrusel-auto {
-  overflow: hidden;
-  position: relative;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: 500px;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
   border-radius: var(--radius);
+  background-color: #ffffff;
   box-shadow: var(--shadow);
 }
 
 .carrusel-auto-track {
   display: flex;
+  width: 600%;
   height: 100%;
-  animation: slide 25s steps(5) infinite;
+  animation: slide-instant 20s steps(6) infinite;
 }
 
 .carrusel-auto-track:hover {
@@ -169,21 +175,27 @@
 }
 
 .carrusel-auto-track img {
-  width: 100%;
-  height: 100%;
+  width: 16.6667%; 
+  height: 100%; 
+  
+  /* CLAVE: 'none' ignora el tamaño del contenedor y usa el tamaño real de la foto */
+  object-fit: none; 
+  
+
+  object-position: center; 
+  
+  /* Evita que las fotos se compriman entre ellas */
   flex-shrink: 0;
-  object-fit: contain; 
-  background: #000; 
+  display: block;
+  
+  /* Fondo blanco si la foto es más pequeña que el contenedor de 900x500 */
+  background-color: #ffffff;
 }
 
 /* Animación: una imagen por paso */
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-500%);
-  }
+@keyframes slide-instant {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 .indicator:nth-child(1) { animation: dotActive 25s steps(5, end) infinite; }
@@ -191,6 +203,12 @@
 .indicator:nth-child(3) { animation: dotActive 25s steps(5, end) infinite 10s; }
 .indicator:nth-child(4) { animation: dotActive 25s steps(5, end) infinite 15s; }
 .indicator:nth-child(5) { animation: dotActive 25s steps(5, end) infinite 20s; }
+.indicator:nth-child(6) { animation: dotActive 25s steps(5, end) infinite 25s; }
+@keyframes dotActive {
+  0%, 19.9% { color: #bbb; }
+  20%, 39.9% { color: var(--primary); }
+  40%, 100% { color: #bbb; }
+}
 
 /*Agradecimientos*/
 

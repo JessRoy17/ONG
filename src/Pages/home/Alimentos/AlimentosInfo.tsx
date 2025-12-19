@@ -23,7 +23,7 @@ export default function AlimentosInfo() {
             Recolectamos los alimentos proporcionados por el Banco de Alimentos de Madrid 
             y en algunos casos por Carrefour(Fundación solidaridad ) y con la ayuda del 
             Ayuntamiento de Torrejón de Ardoz. 
-            Se clasificamos por tipo y caducidad, preparamos paquetes equilibrados 
+            Clasificamos los alimentos por tipo y fecha de caducidad, preparamos paquetes equilibrados 
             y los entregamos a familias  en la Comunidad de Madrid. 
           </p>
         </div>
@@ -66,20 +66,23 @@ export default function AlimentosInfo() {
             <img src="/images/recogida3.jpg" alt="Voluntarios jóvenes" loading="lazy" />
             <img src="/images/recogida4.jpg" alt=" " loading="lazy" />
             <img src="/images/furgo.jpg" alt="" loading="lazy" />
-            
+            <img src="/images/quehacemos.jpg" alt="" loading="lazy" />
+
             <img src="/images/recogida1.jpg" alt="Voluntarios clasificando alimentos" loading="lazy" />
             <img src="/images/recogida2.jpg" alt="Gran recogida de alimentos" loading="lazy" />
             <img src="/images/recogida3.jpg" alt="Voluntarios jóvenes" loading="lazy" />
+
             <img src="/images/recogida4.jpg" alt=" " loading="lazy" />
             <img src="/images/furgo.jpg" alt="" loading="lazy" />
-           
+            <img src="/images/quehacemos.jpg" alt="Voluntarios clasificando alimentos" loading="lazy" />             
+
           </div>
 
          
         </div>
 
         <div className="alimentos-agradecimientos">
-          
+        
           <h3 className="agradecimiento-title">Agradecimientos a nuestros colaboradores</h3>
           <div className="alimentos-agradecimiento-img">
           <img
