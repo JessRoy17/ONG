@@ -21,7 +21,7 @@ export default function AlimentosInfo() {
           <h3>¿Qué hacemos?</h3>
           <p>
             Recolectamos los alimentos proporcionados por el Banco de Alimentos de Madrid 
-            y en algunos casos por Carrefour(Fundación solidaridad ) y con la ayuda del 
+            y en algunos casos por Carrefour (Fundación solidaridad ) y con la ayuda del 
             Ayuntamiento de Torrejón de Ardoz. 
             Clasificamos los alimentos por tipo y fecha de caducidad, preparamos paquetes equilibrados 
             y los entregamos a familias  en la Comunidad de Madrid. 
@@ -50,9 +50,10 @@ export default function AlimentosInfo() {
         <div className="alimentos-text">
           <h3>¿Quieres ayudar?</h3>
           <p>
-            Somos una entidad adscrita al Banco de Alimentos de Madrid, como es lógico estamos sujetos a las normas de control y seguridad. 
+            Somos una entidad adscrita al <b></b> <a href="https://bamadrid.org/"   target="_blank"  rel="noopener noreferrer" className="text-primary hover:underline">
+            Banco de Alimentos de Madrid</a>, como es lógico estamos sujetos a las normas de control y seguridad. 
             Cada Kg que se reparte deberá estar debidamente justificado. Para recibir alimentos, las personas deben ser 
-            <b>evaluadas previamente por Servicios Sociales del municipio</b>. Al estar inscritos en la Comunidad de Madrid, 
+             <b> evaluadas previamente por Servicios Sociales del municipio</b>. Al estar inscritos en la Comunidad de Madrid, 
             podemos atender a cualquier persona que resida en la región.
           </p>
         </div>
