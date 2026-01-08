@@ -1,50 +1,74 @@
 form {
-    margin: 0 auto;
-    max-width: 800px;
-    height: 380px;
-    padding: 10px;
-    padding-left: 30px;
-    background-color: #F65E3D;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+ margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #F65E3D, #ff7a5c);
+  border-radius: 1.2em;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
 }
 
 .margenesForm {
-    margin-top: 30px;
-    margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
-.legendTitulo {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: larger;
-    padding-bottom: 20px;
+.legendTitulo,
+.oculto--formulario-legend {
+   color: white;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 .fieldsetForm {
-    margin-bottom: 20px;
+ display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+  border: none;
 }
-
 .placeholderColor::placeholder {
     color: white;
 }
 
 input,
 textarea {
-    color: white;
-    outline: none;
-    font: 1em sans-serif;
-    border-radius: 3px;
-    background-color: #F65E3D;
-    border-bottom: #000 solid 1px;
-    border-left: #000 solid 1px;
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 300px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.4);
+  padding: 10px 5px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, transform 0.2s ease;
 }
+
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: #fff;
+  transform: translateY(-2px);
+}
+
+#edad {
+  width: 80px;
+}
+
+#apellido,
+#tlf {
+  margin-left: 30px;
+}
+
+/* Botón */
+.buttonAyudanos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 
 
 .buttonAyudanos {
@@ -80,6 +104,19 @@ textarea {
     width: 740px;
 }
 
+.buttonAyudanos {
+  justify-content: center;
+}
+
+.buttonAyudanos button,
+.oculto--formulario-button {
+  background-color: #FFA08B;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 
 @media (max-width: 1024px) {
@@ -140,4 +177,4 @@ textarea {
     .oculto--formulario {
         display: none;
     }
-}
+} 
