@@ -5,6 +5,13 @@ function FormularioPC() {
     <>
       {/* PC */}
       <form className="margenesForm formulario oculto--formularioPC">
+
+        <input
+          type="text"
+          name="company"
+          autoComplete="off"
+          className="honeypot"
+        /> 
         <fieldset>
           <legend className="legendTitulo">Voluntariado</legend>
 
@@ -28,7 +35,7 @@ function FormularioPC() {
           </fieldset>
         </fieldset>
       </form>
-
+      
       {/* Mobile */}
       <form className="formulario oculto--formulario">
         <legend className="oculto--formulario-legend">Voluntariado</legend>
@@ -41,6 +48,13 @@ function FormularioPC() {
         <textarea className="placeholderColor" name="motivo" placeholder="Motivo" />
         <button className="oculto--formulario-button">Ayúdanos</button>
       </form>
+      <div className="robot-check">
+        <label>
+          <input type="checkbok" required/>
+          <span className='custom-checkbox'></span>
+          No soy un robot
+        </label>
+      </div>
     </>
   )
 }

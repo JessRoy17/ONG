@@ -126,9 +126,33 @@ textarea {
   transform: scale(0.96);
 }
 
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+.oculto--formulario {
+  display: none;
+}
 
+.oculto--formularioPC {
+  display: flex;
+}
 
 @media (max-width: 480px) {
+  @media (max-width: 1024px) {
+
+  .oculto--formularioPC {
+    display: none;
+  }
+
+  .oculto--formulario {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
   form{
     margin:40px 15px;
     padding:30px 20px;
@@ -148,6 +172,13 @@ textarea {
   text-area{
     font-size: 1rem;
     padding: 14px;
+  }
+    .buttonAyudanos button {
+    width: 240px;
+  }
+
+  #edad {
+    max-width: 100%;
   }
 }
 
